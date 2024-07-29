@@ -5,7 +5,7 @@
              BackgroundColor="LightBlue">
     <ScrollView>
         <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
-            <Image Source="your_image_source.png"
+            <Image Source="pessoa.png"
                    WidthRequest="200"
                    HeightRequest="200"
                    Aspect="AspectFit" />

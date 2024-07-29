@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StockInspection.Estoque"
+             Title="Estoque"
+             BackgroundColor="LightBlue">
+
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Label Text="Estoque"
+                       FontSize="Large"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center" />
+            </StackLayout>
+
+            <Button Text="+ Adicionar item"
+                    FontSize="Medium"
+                    Clicked="OnAddItemClicked"
+                    BackgroundColor="DarkBlue"
+                    TextColor="White"
+                    CornerRadius="10"
+                    HorizontalOptions="Center" />
+
+            <ListView x:Name="estoqueListView"
+                      SeparatorVisibility="None"
+                      HasUnevenRows="True"
+                      Margin="0,20,0,0">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame Padding="10"
+                                   Margin="5"
+                                   BorderColor="Black"
+                                   CornerRadius="10"
+                                   BackgroundColor="White">
+                                <StackLayout>
+                                    <Label Text="Estampa"
+                                           FontAttributes="Bold"
+                                           HorizontalOptions="Center" />
+                                    <StackLayout Orientation="Horizontal">
+                                        <Image Source="{Binding ImageSource}"
+                                               WidthRequest="50"
+                                               HeightRequest="50"
+                                               VerticalOptions="Start" />
+                                        <StackLayout>
+                                            <Label Text="{Binding Cliente}"
+                                                   VerticalOptions="Start"
+                                                   HorizontalOptions="StartAndExpand" />
+                                            <Label Text="{Binding Tecido}"
+                                                   VerticalOptions="Start"
+                                                   HorizontalOptions="StartAndExpand" />
+                                            <Label Text="{Binding Costura}"
+                                                   VerticalOptions="Start"
+                                                   HorizontalOptions="StartAndExpand" />
+                                            <Label Text="{Binding Acabamento}"
+                                                   VerticalOptions="Start"
+                                                   HorizontalOptions="StartAndExpand" />
+                                            <Label Text="{Binding Silk}"
+                                                   VerticalOptions="Start"
+                                                   HorizontalOptions="StartAndExpand" />
+                                        </StackLayout>
+                                        <Image Source="checkmark.png"
+                                               WidthRequest="30"
+                                               HeightRequest="30"
+                                               VerticalOptions="Center"
+                                               HorizontalOptions="End" />
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
