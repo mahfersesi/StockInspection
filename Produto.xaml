@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StockInspection.Produto"
+             BackgroundColor="LightBlue">
+    <ScrollView>
+        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="Produtos"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Margin="0,20,0,0"/>
+            <Image Source="your_logo_image.png"
+                   WidthRequest="50"
+                   HeightRequest="50"
+                   HorizontalOptions="End"/>
+            <Button Text="Matéria Prima"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    WidthRequest="250"
+                    Margin="0,20,0,0">
+                <Button.ImageSource>
+                    <FontImageSource Glyph="&#xf48e;" 
+                                     FontFamily="FontAwesome" 
+                                     Size="20"/>
+                </Button.ImageSource>
+            </Button>
+            <Button Text="Corte"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    WidthRequest="250"
+                    Margin="0,20,0,0">
+                <Button.ImageSource>
+                    <FontImageSource Glyph="&#xf0c4;" 
+                                     FontFamily="FontAwesome" 
+                                     Size="20"/>
+                </Button.ImageSource>
+            </Button>
+            <Button Text="Silk"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    WidthRequest="250"
+                    Margin="0,20,0,0">
+                <Button.ImageSource>
+                    <FontImageSource Glyph="&#xf3ed;" 
+                                     FontFamily="FontAwesome" 
+                                     Size="20"/>
+                </Button.ImageSource>
+            </Button>
+            <Button Text="Costura"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    WidthRequest="250"
+                    Margin="0,20,0,0">
+                <Button.ImageSource>
+                    <FontImageSource Glyph="&#xf5d7;" 
+                                     FontFamily="FontAwesome" 
+                                     Size="20"/>
+                </Button.ImageSource>
+            </Button>
+            <Button Text="Acabamento"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    WidthRequest="250"
+                    Margin="0,20,0,0">
+                <Button.ImageSource>
+                    <FontImageSource Glyph="&#xf553;" 
+                                     FontFamily="FontAwesome" 
+                                     Size="20"/>
+                </Button.ImageSource>
+            </Button>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

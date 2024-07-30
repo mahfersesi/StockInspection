@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StockInspection.MateriaPrima"
+             BackgroundColor="LightBlue">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label Text="Cadastro de Materia Prima"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+            <Entry Placeholder="Nome do cliente" x:Name="NomeClienteEntry" />
+            <Entry Placeholder="Tipo de tecido" x:Name="TipoTecidoEntry" Text="Malha"/>
+            <Entry Placeholder="Unidade de Medida" x:Name="UnidadeMedidaEntry" />
+            <Button Text="Cadastrar" 
+                    BackgroundColor="DarkBlue" 
+                    TextColor="White" 
+                    Clicked="OnCadastrarClicked" 
+                    HorizontalOptions="Center" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

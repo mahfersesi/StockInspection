@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StockInspection.EstoquePage"
+             BackgroundColor="LightBlue">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label Text="Estoque"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+            <Frame BackgroundColor="White" 
+                   BorderColor="Black" 
+                   CornerRadius="20"
+                   Padding="10"
+                   HorizontalOptions="Center">
+                <StackLayout>
+                    <Label Text="Estampa"
+                           FontSize="Medium"
+                           HorizontalOptions="Center"/>
+                    <Image Source="mickey_and_minnie.png"
+                           WidthRequest="100"
+                           HeightRequest="100"
+                           HorizontalOptions="Center"/>
+                    <Label Text="Cliente: Maria Fernanda"/>
+                    <Label Text="Costura: ok"/>
+                    <Label Text="Tecido: ok"/>
+                    <Label Text="Corte: ok"/>
+                    <Label Text="Acabamento: off"/>
+                    <Label Text="Silk: ok"/>
+                    <Label Text="Pedido: 00058"/>
+                    <Label Text="Data de entrada: 28/04/2024"/>
+                    <Label Text="terminando: 82%"/>
+                    <StackLayout Orientation="Horizontal"
+                                 HorizontalOptions="Center"
+                                 Margin="10,0,0,0">
+                        <Button Text="Contagem diária" 
+                                BackgroundColor="DarkBlue" 
+                                TextColor="White" 
+                                Clicked="OnContagemDiariaClicked"/>
+                        <Button ImageSource="delete_icon.png"
+                                Clicked="OnDeleteClicked"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
