@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StockInspection.EnvioCostura"
+             BackgroundColor="LightBlue">
+
+    <StackLayout Padding="30" VerticalOptions="Center">
+
+        <Label Text="Envio para a Costura"
+               FontSize="Large"
+               HorizontalOptions="Center" />
+
+        <Entry Placeholder="Nome da costureira"
+               x:Name="CostureiraEntry" />
+
+        <Entry Placeholder="Numero de frente de Camisetas"
+               x:Name="FrenteCamisetasEntry"
+               Keyboard="Numeric" />
+
+        <Entry Placeholder="Numero de costas de Camisetas"
+               x:Name="CostasCamisetasEntry"
+               Keyboard="Numeric" />
+
+        <Entry Placeholder="Numero de linhas que vai ser enviado"
+               x:Name="LinhasEnviadasEntry"
+               Keyboard="Numeric" />
+
+        <Button Text="Cadastrar"
+                BackgroundColor="DodgerBlue"
+                TextColor="White"
+                Clicked="OnCadastrarClicked" />
+
+    </StackLayout>
+</ContentPage>

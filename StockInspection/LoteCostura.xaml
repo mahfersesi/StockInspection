@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StockInspection.LoteCostura"
+             BackgroundColor="LightBlue">
+
+    <StackLayout Padding="30" VerticalOptions="Center">
+
+        <Label Text="Envio para a Costura"
+               FontSize="Large"
+               HorizontalOptions="Center" />
+
+        <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+            <Entry Placeholder="Numero do Lote"
+                   x:Name="NumeroLoteEntry"
+                   HorizontalOptions="FillAndExpand" />
+            <Button Text="🔍"
+                    Clicked="OnSearchClicked"
+                    BackgroundColor="Transparent"
+                    BorderColor="Black"
+                    BorderWidth="1"
+                    CornerRadius="5"
+                    Padding="5" />
+        </StackLayout>
+
+        <Frame x:Name="DetailsFrame"
+               Padding="10"
+               Margin="20,10"
+               BackgroundColor="White"
+               IsVisible="False"
+               VerticalOptions="CenterAndExpand">
+
+            <StackLayout>
+                <Label Text="Josefina Campos Guimaraes"
+                       FontSize="Medium"
+                       HorizontalOptions="Center" />
+                <Label Text="Tecido: 5 rolos de malha"
+                       FontSize="Small" />
+                <Label Text="Unidade de medida: Metro"
+                       FontSize="Small" />
+                <Label Text="Frete: 645"
+                       FontSize="Small" />
+                <Label Text="Costas: 645"
+                       FontSize="Small" />
+                <Label Text="Numero do Lote: 258845"
+                       FontSize="Small" />
+                <Button Text="Costura"
+                        BackgroundColor="DodgerBlue"
+                        TextColor="White"
+                        Clicked="OnCosturaClicked"
+                        VerticalOptions="End" />
+            </StackLayout>
+        </Frame>
+
+    </StackLayout>
+</ContentPage>

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.ObjectModel;
 using Microsoft.Maui.Controls;
+using StockInspection.Modelos;
 
 namespace StockInspection
 {
@@ -14,10 +15,10 @@ namespace StockInspection
 
             lista = new ObservableCollection<Modelos.Cliente>
             {
-                new Cliente { Name = "Alice Gabriela Gonsalves" },
-                new Cliente { Name = "Maria Eduarda Lazore" },
-                new Cliente { Name = "Maria Eduarda Morais" },
-                new Cliente { Name = "Maria Fernanda Lima Silva" }
+                new Cliente { SetNome = "Alice Gabriela Gonsalves" },
+                new Cliente { SetNome = "Maria Eduarda Lazore" },
+                new Cliente { SetNome = "Maria Eduarda Morais" },
+                new Cliente { SetNome = "Maria Fernanda Lima Silva" }
             };
 lista =clientesListView.ItemsSource;
         }

@@ -1,0 +1,52 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StockInspection.MetaDiaria"
+             Title="Estoque">
+    <Grid BackgroundColor="LightBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Image Source="logosemfundo.png" 
+                   HorizontalOptions="End" />
+            <Label Text="Estoque"
+                   VerticalOptions="Center"
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="Title" />
+        </Grid>
+
+        <Label Text="Corte"
+               Grid.Row="1" />
+        <Entry x:Name="txtCorte"
+               Grid.Row="1"
+               Grid.Column="1" />
+
+        <Label Text="Silk"
+               Grid.Row="2" />
+        <Entry x:Name="txtSilk"
+               Grid.Row="2"
+               Grid.Column="1" />
+
+        <Label Text="Costura"
+               Grid.Row="3" />
+        <Entry x:Name="txtCostura"
+               Grid.Row="3"
+               Grid.Column="1" />
+
+        <Label Text="Acabamento"
+               Grid.Row="4" />
+        <Entry x:Name="txtAcabamento"
+               Grid.Row="4"
+               Grid.Column="1" />
+
+        <Button Text="Salvar alterações"
+                Clicked="Button_Salvar_Clicked"
+                Grid.Row="5"
+                Grid.ColumnSpan="2" />
+    </Grid>
+</ContentPage>

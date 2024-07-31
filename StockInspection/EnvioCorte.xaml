@@ -1,0 +1,29 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StockInspection.EnvioCorte"
+             Title="Envio para o Corte">
+    <Grid BackgroundColor="LightBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Label Text="Vai para qual Cortador?"
+               Grid.Row="0"
+               FontSize="Title" />
+
+        <Entry x:Name="txtCortador"
+               Placeholder="Nome do Cortador"
+               Grid.Row="1" />
+
+        <Entry x:Name="txtQuantidade"
+               Placeholder="Quantidade"
+               Keyboard="Numeric"
+               Grid.Row="2" />
+
+        <Button Text="Cadastrar"
+                Clicked="Button_Cadastrar_Clicked"
+                Grid.Row="3" />
+    </Grid>
+</ContentPage>

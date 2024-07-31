@@ -1,0 +1,36 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StockInspection.LoteCorte"
+             Title="Envio para o Corte">
+    <Grid BackgroundColor="LightBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Image Source="logosemfundo.png" 
+                   HorizontalOptions="End" />
+            <Label Text="Envio para o Corte"
+                   VerticalOptions="Center"
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="Title" />
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Entry x:Name="txtNumeroLote"
+                   Placeholder="Número do Lote"
+                   HorizontalTextAlignment="Center" />
+            <Image Source="icone_lupa.png"
+                   HorizontalOptions="End" />
+        </Grid>
+
+        <Label x:Name="lblInformacoesLote"
+               Grid.Row="2"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               FontSize="Small"
+               IsVisible="False" />
+    </Grid>
+</ContentPage>

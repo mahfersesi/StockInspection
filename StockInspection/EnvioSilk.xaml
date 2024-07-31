@@ -1,0 +1,37 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StockInspection.EnvioSilk"
+             Title="Envio para o Silk">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Label Text="Vai para qual Silk?"
+               Grid.Row="0" />
+
+        <Entry x:Name="txtNomeSilk"
+               Placeholder="Digite o nome do silk"
+               Grid.Row="1" />
+
+        <Grid Grid.Row="2">
+            <Label Text="Desenho da estampa"
+                   VerticalAlignment="Center" />
+            <Button Text="Anexar"
+                    Grid.Column="1"
+                    Clicked="Button_Anexar_Clicked" />
+        </Grid>
+
+        <Entry x:Name="txtQuantidade"
+               Placeholder="Digite a quantidade"
+               Grid.Row="3"
+               Keyboard="Numeric" />
+
+        <Button Text="Cadastrar"
+                Grid.Row="4"
+                Clicked="Button_Cadastrar_Clicked" />
+    </Grid>
+</ContentPage>

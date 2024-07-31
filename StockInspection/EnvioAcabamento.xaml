@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StockInspection.EnvioAcabamento"
+             BackgroundColor="LightBlue">
+
+    <StackLayout Padding="30" VerticalOptions="Center">
+
+        <Label Text="Envio para o acabamento"
+               FontSize="Large"
+               HorizontalOptions="Center" />
+
+        <Entry Placeholder="Nome do acabamento"
+               x:Name="AcabamentoEntry" />
+
+        <Entry Placeholder="Numero de embalagens que vai ser enviado"
+               x:Name="EmbalagensEntry"
+               Keyboard="Numeric" />
+
+        <Entry Placeholder="Numero de adesivos do tamanho é suficiente?"
+               x:Name="AdesivosEntry"
+               Keyboard="Numeric" />
+
+        <Entry Placeholder="Numero de tiras para amarrar é suficiente?"
+               x:Name="TirasEntry"
+               Keyboard="Numeric" />
+
+        <Button Text="Cadastrar"
+                BackgroundColor="DodgerBlue"
+                TextColor="White"
+                Clicked="OnCadastrarClicked" />
+
+    </StackLayout>
+</ContentPage>
