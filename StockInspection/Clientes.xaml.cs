@@ -13,13 +13,21 @@ namespace StockInspection
         {
             InitializeComponent();
 
-            lista = new ObservableCollection<Modelos.Cliente>
-            {
-                new Cliente { SetNome = "Alice Gabriela Gonsalves" },
-                new Cliente { SetNome = "Maria Eduarda Lazore" },
-                new Cliente { SetNome = "Maria Eduarda Morais" },
-                new Cliente { SetNome = "Maria Fernanda Lima Silva" }
-            };
+            lista = new ObservableCollection<Modelos.Cliente>();
+            var A=new Cliente();               
+            A.SetNome("Alice Gabriela Gonsalves");
+            lista.Add(A);
+            var B=new Cliente(); 
+            B.SetNome ("Maria Eduarda Lazore");
+            lista.Add(B);
+            var C=new Cliente(); 
+            C.SetNome ("Maria Eduarda Morais");
+            lista.Add(C);
+            var D=new Cliente(); 
+            D.SetNome ("Maria Fernanda Lima Silva");
+            lista.Add(D);
+            
+
 lista =clientesListView.ItemsSource;
         }
 
@@ -27,7 +35,7 @@ lista =clientesListView.ItemsSource;
         {
             if (!string.IsNullOrEmpty(entryNomeDoCliente.Text))
             {
-                lista.Add(new Cliente { Name = entryNomeDoCliente.Text });
+                lista.Add(new Cliente { nome = entryNomeDoCliente.Text });
                 entryNomeDoCliente.Text = string.Empty;
             }
         }
