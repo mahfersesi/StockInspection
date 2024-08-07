@@ -28,14 +28,14 @@ namespace StockInspection
             lista.Add(D);
             
 
-lista =clientesListView.ItemsSource;
+            clientesListView.ItemsSource = lista;
         }
 
         private void OnAddClienteClicked(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(entryNomeDoCliente.Text))
             {
-                lista.Add(new Cliente { nome = entryNomeDoCliente.Text });
+                lista.Add(new Cliente { SetNome = entryNomeDoCliente.Text });
                 entryNomeDoCliente.Text = string.Empty;
             }
         }

@@ -9,7 +9,7 @@ public class Cliente
 
 public void SetNome(string nome)
 {
-    this.nome= nome;
+    this.nome = nome;
 }
 public string GetNome()
 {
