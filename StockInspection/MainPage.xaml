@@ -5,13 +5,14 @@
              BackgroundColor="LightBlue">
     <ScrollView>
         <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
-            <Image Source="pessoa.png"
+            <Image Source="logosemfundo.png"
                    WidthRequest="200"
                    HeightRequest="200"
                    Aspect="AspectFit" />
             <Button Text="Clientes" 
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
+                    Clicked="Proxim"
                     WidthRequest="200"
                     Margin="0,20,0,0">
                 <Button.ImageSource>
@@ -24,6 +25,7 @@
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
                     WidthRequest="200"
+                    Clicked="Proximo"
                     Margin="0,20,0,0">
                 <Button.ImageSource>
                     <FontImageSource Glyph="&#xf0d1;" 
@@ -35,6 +37,7 @@
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
                     WidthRequest="200"
+                    Clicked="Proxi"
                     Margin="0,20,0,0">
                 <Button.ImageSource>
                     <FontImageSource Glyph="&#xf03a;" 
@@ -42,7 +45,8 @@
                                      Size="20"/>
                 </Button.ImageSource>
             </Button>
-            <Button Text="Vendas" 
+            <Button Text="Vendas"
+                    Clicked="Prox" 
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
                     WidthRequest="200"

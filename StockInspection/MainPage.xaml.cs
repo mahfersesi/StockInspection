@@ -8,25 +8,25 @@
         }
         
         // Add event handlers if needed, for example:
-        private void OnClientesClicked(object sender, EventArgs e)
-        {
-            // Handle the button click
-        }
+        private void Proxim(object sender, EventArgs args)
+  {
+      Application.Current.MainPage = new Clientes();
+  }
 
-        private void OnProdutosClicked(object sender, EventArgs e)
-        {
-            // Handle the button click
-        }
+        private void Proximo(object sender, EventArgs args)
+  {
+      Application.Current.MainPage = new Produto();
+  }
 
-        private void OnEstoqueClicked(object sender, EventArgs e)
-        {
-            // Handle the button click
-        }
+        private void Proxi(object sender, EventArgs args)
+  {
+      Application.Current.MainPage = new Estoque();
+  }
 
-        private void OnVendasClicked(object sender, EventArgs e)
-        {
-            // Handle the button click
-        }
+        private void Prox(object sender, EventArgs args)
+  {
+      Application.Current.MainPage = new VendasPage();
+  }
     }
 }
 

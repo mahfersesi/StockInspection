@@ -35,7 +35,9 @@ namespace StockInspection
         {
             if (!string.IsNullOrEmpty(entryNomeDoCliente.Text))
             {
-                lista.Add(new Cliente { SetNome = entryNomeDoCliente.Text });
+                var a = new Cliente();
+                a.SetNome(entryNomeDoCliente.Text);
+                lista.Add(a);
                 entryNomeDoCliente.Text = string.Empty;
             }
         }

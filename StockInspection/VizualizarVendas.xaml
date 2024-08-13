@@ -18,21 +18,22 @@
                    FontSize="Title" />
         </Grid>
 
-        <Label Grid.Row="1"
-               VerticalOptions="Center"
-               HorizontalOptions="Center">
-            569 camisetas<br/>
-            4 rolos de tecido<br/>
-            569 silk<br/>
-            573 costuradas<br/>
-            4 com defeito<br/>
-            <br/>
-            Cliente: Maria Fernanda Lima<br/>
-            Data do Pedido: 03/02/2024<br/>
-            Data de entrega: 24/02/2024<br/>
-            Valor: $5.690,00<br/>
-            Forma de Pagamento: Pix<br/>
-            --- Pago
+        <Label Text="569 camisetas
+        4 rolos de tecido
+        569 silk
+        573 costuradas
+        4 com defeito
+        
+        Cliente: Maria Fernanda Lima
+        Data do Pedido: 03/02/2024
+        Data de entrega: 24/02/2024
+        Valor: $5.690,00
+        Forma de Pagamento: Pix
+        --- Pago"
+            Grid.Row="1"
+            VerticalOptions="Center"
+            HorizontalOptions="Center">
+           
         </Label>
 
         <Grid Grid.Row="2">
