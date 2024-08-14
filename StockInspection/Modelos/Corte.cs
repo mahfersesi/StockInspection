@@ -1,5 +1,5 @@
 namespace StockInspection.Modelos;
-public class Corte : Cliente
+public class Corte : Registro
 {
     string NomeCortador;
     int Quantidade;

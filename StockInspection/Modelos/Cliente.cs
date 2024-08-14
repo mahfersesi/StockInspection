@@ -1,20 +1,11 @@
 namespace StockInspection.Modelos;
-public class Cliente
+public class Cliente : Registro
 {
-    string nome;
-    int id;
     string cpf;
-    int numero;
+    int Numero;
     string endereço;
 
-public void SetNome(string nome)
-{
-    this.nome = nome;
-}
-public string GetNome()
-{
-    return nome;
-}
+
 
 public void SetEndereço(string endereço)
 {
@@ -33,13 +24,13 @@ public string GetCpf()
     return cpf;
 }
 
-public void SetNumero(int numero)
+public void SetNumero(int Numero)
 {
-    this.numero= numero;
+    this.Numero= Numero;
 }
 public int GetNumero()
 {
-    return numero;
+    return Numero;
 }
 
 

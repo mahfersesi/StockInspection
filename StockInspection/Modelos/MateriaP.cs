@@ -1,5 +1,5 @@
 namespace StockInspection.Modelos;
-public class MateriaP : Cliente
+public class MateriaP : Registro
 {
     string NomeMP;
     string UnidadeDeMedida;
