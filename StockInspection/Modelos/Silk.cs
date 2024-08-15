@@ -3,7 +3,7 @@ public class Silk : Registro
 {
     string NomeSilk;
     int QuantidadeCamiseta;
-    string NomeLote;
+    int NomeLote;
 
     public void SetNomeSilk(string NomeSilk)
 {
@@ -17,15 +17,15 @@ public string GetNomeSilk()
 {
     this.QuantidadeCamiseta= QuantidadeCamiseta;
 }
-    public string GetQuantidadeCamiseta()
+    public int GetQuantidadeCamiseta()
 {
     return QuantidadeCamiseta;
 }
- public void SetNomeLote(string NomeLote)
+ public void SetNomeLote(int NomeLote)
 {
     this.NomeLote = NomeLote;
 }
-public string GetNomeLote()
+public int GetNomeLote()
 {
     return NomeLote;
 }

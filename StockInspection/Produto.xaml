@@ -4,17 +4,25 @@
              x:Class="StockInspection.Produto"
              BackgroundColor="LightBlue">
     <ScrollView>
-        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <VerticalStackLayout HorizontalOptions="Center" 
+            VerticalOptions="Center">
+
+
             <Label Text="Produtos"
                    FontSize="Large"
                    FontAttributes="Bold"
                    HorizontalOptions="Center"
                    Margin="0,20,0,0"/>
+
+
             <Image Source="your_logo_image.png"
                    WidthRequest="50"
                    HeightRequest="50"
                    HorizontalOptions="End"/>
+
+
             <Button Text="Matéria Prima"
+                    Clicked="OnMateriaPrimaClicked"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
                     WidthRequest="250"
@@ -26,6 +34,7 @@
                 </Button.ImageSource>
             </Button>
             <Button Text="Corte"
+                    Clicked="OnCorteClicked"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
                     WidthRequest="250"
@@ -37,6 +46,7 @@
                 </Button.ImageSource>
             </Button>
             <Button Text="Silk"
+                    Clicked="OnSilkClicked"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
                     WidthRequest="250"
@@ -48,6 +58,7 @@
                 </Button.ImageSource>
             </Button>
             <Button Text="Costura"
+                    Clicked="OnCosturaClicked"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
                     WidthRequest="250"
@@ -59,6 +70,7 @@
                 </Button.ImageSource>
             </Button>
             <Button Text="Acabamento"
+                    Clicked="OnAcabamentoClicked"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
                     WidthRequest="250"

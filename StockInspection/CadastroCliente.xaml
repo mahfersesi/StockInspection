@@ -9,20 +9,46 @@
                    FontSize="Large"
                    FontAttributes="Bold"
                    HorizontalOptions="Center" />
-            <Entry Placeholder="Nome do Cliente" x:Name="NomeClienteEntry" />
-            <Label Text="Numero de celular" FontAttributes="Bold"/>
+
+            <Entry Placeholder="Nome do Cliente" 
+                                x:Name="NomeClienteEntry" />
+
+            <Label Text="Numero de celular" 
+                    FontAttributes="Bold"/>
+
             <StackLayout Orientation="Horizontal">
-                <Entry Placeholder="DDD" x:Name="DDDEntry" WidthRequest="50" Keyboard="Numeric" />
-                <Entry Placeholder="Número" x:Name="NumeroCelularEntry" Keyboard="Numeric" />
+
+                <Entry Placeholder="DDD" 
+                x:Name="DDDEntry" 
+                WidthRequest="50" 
+                Keyboard="Numeric" />
+
+                <Entry Placeholder="Número" 
+                x:Name="NumeroCelularEntry" 
+                Keyboard="Numeric" />
+
             </StackLayout>
-            <Label Text="CEP" FontAttributes="Bold"/>
+
+            <Label Text="CEP" 
+            FontAttributes="Bold"/>
             <StackLayout Orientation="Horizontal">
-                <Entry Placeholder="CEP" x:Name="CEPEntry" WidthRequest="150" Keyboard="Numeric" />
+                
+                <Entry Placeholder="CEP" 
+                x:Name="CEPEntry" 
+                WidthRequest="150" 
+                Keyboard="Numeric" />
             </StackLayout>
-            <Entry Placeholder="Endereço" x:Name="EnderecoEntry" />
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                <Button Text="Salvar" Clicked="OnSalvarClicked" />
-                <Button Text="Cancelar" Clicked="OnCancelarClicked" />
+
+            <Entry Placeholder="Endereço" 
+            x:Name="EnderecoEntry" />
+
+            <StackLayout Orientation="Horizontal" 
+            HorizontalOptions="Center">
+
+                <Button Text="Salvar" 
+                Clicked="OnSalvarClicked" />
+                <Button Text="Cancelar" 
+                Clicked="OnCancelarClicked" />
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

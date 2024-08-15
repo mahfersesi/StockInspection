@@ -19,7 +19,7 @@ public string GetNomeAcabamento()
 {
     this.QuantidadeCamiseta = QuantidadeCamiseta;
 }
-public string GetQuantidadeCamiseta()
+public int GetQuantidadeCamiseta()
 {
     return QuantidadeCamiseta;
 }
@@ -27,7 +27,7 @@ public string GetQuantidadeCamiseta()
 {
     this.QuantidadeEmbalagem = QuantidadeEmbalagem;
 }
-public string GetQuantidadeEmbalagem()
+public int GetQuantidadeEmbalagem()
 {
     return QuantidadeEmbalagem;
 }
@@ -35,7 +35,7 @@ public string GetQuantidadeEmbalagem()
 {
     this.QuantidadeTamanho = QuantidadeTamanho;
 }
-public string GetQuantidadeTamanho()
+public int GetQuantidadeTamanho()
 {
     return QuantidadeTamanho;
 }
@@ -43,7 +43,7 @@ public string GetQuantidadeTamanho()
 {
     this.QuantidadeTiras = QuantidadeTiras;
 }
-public string GetQuantidadeTiras()
+public int GetQuantidadeTiras()
 {
     return QuantidadeTiras;
 }

@@ -18,7 +18,7 @@ public void SetQuantidadeFrente(int QuantidadeFrente)
 {
     this.QuantidadeFrente = QuantidadeFrente;
 }
-public string GetQuantidadeFrente()
+public int GetQuantidadeFrente()
 {
     return QuantidadeFrente;
 }
@@ -26,7 +26,7 @@ public void SetQuantidadeCostas(int QuantidadeCostas)
 {
     this.QuantidadeCostas = QuantidadeCostas;
 }
-public string GetQuantidadeCostas()
+public int GetQuantidadeCostas()
 {
     return QuantidadeCostas;
 }
@@ -34,7 +34,7 @@ public void SetQuantidadeLinha(int QuantidadeLinha)
 {
     this.QuantidadeLinha = QuantidadeLinha;
 }
-public string GetQuantidadeLinha()
+public int GetQuantidadeLinha()
 {
     return QuantidadeLinha;
 }

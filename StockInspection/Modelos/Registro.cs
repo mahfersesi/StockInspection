@@ -16,7 +16,7 @@ public void SetId(int Id)
 {
     this.Id = Id;
 }
-public string GetId()
+public int GetId()
 {
     return Id;
 }

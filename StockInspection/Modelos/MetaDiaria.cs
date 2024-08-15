@@ -9,7 +9,7 @@ public class MetaDiaria : Registro
 {
     this.QuantidadeCorte = QuantidadeCorte;
 }
-public string GetQuantidadeCorte()
+public int GetQuantidadeCorte()
 {
     return QuantidadeCorte;
 }
@@ -17,7 +17,7 @@ public void SetQuantidadeCostura(int QuantidadeCostura)
 {
     this.QuantidadeCostura = QuantidadeCostura;
 }
-public string GetQuantidadeCostura()
+public int GetQuantidadeCostura()
 {
     return QuantidadeCostura;
 }
@@ -25,7 +25,7 @@ public void SetQuantidadeSilk(int QuantidadeSilk)
 {
     this.QuantidadeSilk = QuantidadeSilk;
 }
-public string GetQuantidadeSilk()
+public int GetQuantidadeSilk()
 {
     return QuantidadeSilk;
 }
@@ -33,7 +33,7 @@ public void SetQuantidadeAcabamento(int QuantidadeAcabamento)
 {
     this.QuantidadeAcabamento = QuantidadeAcabamento;
 }
-public string GetQuantidadeAcabamento()
+public int GetQuantidadeAcabamento()
 {
     return QuantidadeAcabamento;
 }
