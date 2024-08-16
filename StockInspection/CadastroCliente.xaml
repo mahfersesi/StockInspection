@@ -3,53 +3,124 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="StockInspection.CadastroCliente"
              BackgroundColor="LightBlue">
-    <ContentPage.Content>
-        <StackLayout Padding="20">
-            <Label Text="Clientes"
+
+    <Grid>
+    
+
+    <Grid.RowDefinitions>
+        <RowDefinition Height="200"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="*"/>
+   
+    </Grid.ColumnDefinitions>
+
+
+            <Label Text="Nome Do(a) Cliente"
+                   FontSize="Large"
+                   Grid.Column="0"
+                   Grid.Row="1"/>
+
+
+            <Label Text="Cadastro De Clientes"
                    FontSize="Large"
                    FontAttributes="Bold"
-                   HorizontalOptions="Center" />
+                   Grid.Column="1"
+                   Grid.Row="0"
+                   Grid.ColumnSpan="3"/>
 
             <Entry Placeholder="Nome do Cliente" 
-                                x:Name="NomeClienteEntry" />
+                    x:Name="NomeClienteEntry" 
+                    TextColor="Black"
+                    Grid.Column="0"
+                    Grid.Row="2"/>
 
             <Label Text="Numero de celular" 
-                    FontAttributes="Bold"/>
+                    FontAttributes="Bold"
+                    Grid.Column="0"
+                    Grid.Row="3"/>
 
-            <StackLayout Orientation="Horizontal">
+            
 
                 <Entry Placeholder="DDD" 
                 x:Name="DDDEntry" 
+                Grid.Column="0"
+                Grid.Row="4"
                 WidthRequest="50" 
                 Keyboard="Numeric" />
 
                 <Entry Placeholder="Número" 
                 x:Name="NumeroCelularEntry" 
-                Keyboard="Numeric" />
+                Keyboard="Numeric" 
+                Grid.Column="1"
+                Grid.Row="4"/>
 
-            </StackLayout>
+            
 
             <Label Text="CEP" 
-            FontAttributes="Bold"/>
-            <StackLayout Orientation="Horizontal">
+                    FontAttributes="Bold"
+                    Grid.Column="0"
+                    Grid.Row="5"/>
+            
                 
                 <Entry Placeholder="CEP" 
                 x:Name="CEPEntry" 
                 WidthRequest="150" 
-                Keyboard="Numeric" />
-            </StackLayout>
+                Keyboard="Numeric"
+                 Grid.Column="0"
+                Grid.Row="6"/>
+
+            <Label Text="Endereço" 
+                    FontAttributes="Bold"
+                    Grid.Column="0"
+                    Grid.Row="7"/>
+            
 
             <Entry Placeholder="Endereço" 
-            x:Name="EnderecoEntry" />
+                    x:Name="EnderecoEntry" 
+                    Grid.Column="0"
+                    Grid.Row="8"/>
 
-            <StackLayout Orientation="Horizontal" 
-            HorizontalOptions="Center">
+            
 
                 <Button Text="Salvar" 
-                Clicked="OnSalvarClicked" />
+                        Clicked="OnSalvarClicked"
+                        BackgroundColor="Blue"
+                        CornerRadius="25" 
+                        Grid.Column="1"
+                        Grid.Row="9" />
+
+
                 <Button Text="Cancelar" 
-                Clicked="OnCancelarClicked" />
-            </StackLayout>
-        </StackLayout>
-    </ContentPage.Content>
+                        Clicked="OnCancelarClicked"
+                        BackgroundColor="Blue"
+                        CornerRadius="25" 
+                        Grid.Column="1"
+                        Grid.Row="13"/>
+
+                <Button Text="Excluir"
+                    FontSize="Medium"
+                    BackgroundColor="Blue"
+                    CornerRadius="25" 
+                    Clicked="OnDeleteClienteClicked"
+                    Grid.Column="1"
+                    Grid.Row="11" />
+</Grid>
 </ContentPage>

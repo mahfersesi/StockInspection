@@ -33,25 +33,10 @@ namespace StockInspection
 
         private void OnAddClienteClicked(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(entryNomeDoCliente.Text))
-            {
-                var a = new Cliente();
-                a.SetNome(entryNomeDoCliente.Text);
-                lista.Add(a);
-                entryNomeDoCliente.Text = string.Empty;
-            }
+            Application.Current.MainPage = new CadastroCliente();
         }
 
-        private void OnDeleteClienteClicked(object sender, EventArgs e)
-        {
-            var button = sender as Button;
-            var cliente = button.BindingContext as Modelos.Cliente;
-
-            if (cliente != null)
-            {
-                lista.Remove(cliente);
-            }
-        }
+        
     }
 
 }
