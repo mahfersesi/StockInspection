@@ -35,6 +35,10 @@ namespace StockInspection
         {
             Application.Current.MainPage = new CadastroCliente();
         }
+        private void QuandBotao(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new MainPage();
+        }
 
         
     }

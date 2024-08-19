@@ -39,5 +39,10 @@ namespace StockInspection
                 lista.Remove(cliente);
             }
         }
+
+        private void QuandoBotao(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new Clientes();
+        }
     }
 }

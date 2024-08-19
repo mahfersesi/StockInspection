@@ -35,5 +35,10 @@ namespace StockInspection;
         {
             Application.Current.MainPage = new EnvioAcabamento();
         }
+
+        private void QuadoBotao(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new MainPage();
+        }
     }
 

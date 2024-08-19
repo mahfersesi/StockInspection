@@ -28,18 +28,23 @@
    
     </Grid.ColumnDefinitions>
 
-    
+            <ImageButton Source="logosemfundo.png"
+                        Clicked="QuandBotao"
+                        Grid.Row="0"
+                        Grid.Column="3"/>
+
+
             <Label Text="Clientes"
-                   FontSize="Large"
+                   FontSize="50"
                    Grid.Column="1"
-                   Grid.Row="1"/>
+                   Grid.Row="0"/>
 
             <Button Text="+"
-                        FontSize="Large"
-                        Clicked="OnAddClienteClicked"
-                        BackgroundColor="LightGreen"
-                        Grid.Column="2"
-                        Grid.Row="1"/>
+                    FontSize="Large"
+                    Clicked="OnAddClienteClicked"
+                    BackgroundColor="LightGreen"
+                    Grid.Column="2"
+                    Grid.Row="1"/>
             
             <SearchBar x:Name="searchBar"
                            Placeholder="Nome Do(a) Cliente"
