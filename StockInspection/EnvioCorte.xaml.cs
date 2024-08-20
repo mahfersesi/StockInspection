@@ -19,5 +19,9 @@ namespace StockInspection
             // Por exemplo:
             await DisplayAlert("Sucesso", "Dados cadastrados com sucesso!", "OK");
         }
+        private void QndoBotao(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new Produto();
+        }
     }
 }

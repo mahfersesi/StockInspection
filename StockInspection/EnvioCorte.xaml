@@ -1,29 +1,68 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="StockInspection.EnvioCorte"
-             Title="Envio para o Corte">
-    <Grid BackgroundColor="LightBlue">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
+             BackgroundColor="LightBlue">
+    <Grid>
+    
 
-        <Label Text="Vai para qual Cortador?"
-               Grid.Row="0"
-               FontSize="Title" />
+    <Grid.RowDefinitions>
+        <RowDefinition Height="150"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="*"/>
+   
+    </Grid.ColumnDefinitions>
+
+       <ImageButton Source="logosemfundo.png"
+            Clicked="QndoBotao"
+            Grid.Row="0"
+            Grid.Column="3"/>
+
+       <Label Text="Envio Para O Corte"
+              Grid.Row="0"
+              Grid.Column="0"
+              Grid.ColumnSpan="2"
+              FontSize="Title" />
+
+        <Label Text="Vai para qual Cortador"
+               Grid.Row="1"
+               Grid.Column="0"
+               Grid.ColumnSpan="2"
+               FontSize="20" />
 
         <Entry x:Name="txtCortador"
                Placeholder="Nome do Cortador"
-               Grid.Row="1" />
+               Grid.Row="2"
+               Grid.Column="0"
+               Grid.ColumnSpan="3" />
+
+       <Label Text="Quantas camisetas"
+               Grid.Row="3"
+               Grid.Column="0"
+               Grid.ColumnSpan="2"
+               FontSize="20" />
 
         <Entry x:Name="txtQuantidade"
                Placeholder="Quantidade"
                Keyboard="Numeric"
-               Grid.Row="2" />
+               Grid.Row="4"
+               Grid.Column="0"
+               Grid.ColumnSpan="3" />
 
         <Button Text="Cadastrar"
                 Clicked="Button_Cadastrar_Clicked"
-                Grid.Row="3" />
+                Grid.Row="6"
+                Grid.Column="1" />
     </Grid>
 </ContentPage>

@@ -18,22 +18,22 @@ namespace StockInspection;
 
         private void OnCorteClicked(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new EnvioCorte();
+            Application.Current.MainPage = new LoteCorte();
         }
 
         private void OnSilkClicked(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new EnvioSilk();
+            Application.Current.MainPage = new LoteSilk();
         }
 
         private void OnCosturaClicked(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new EnvioCostura();
+            Application.Current.MainPage = new LoteCostura();
         }
 
         private void OnAcabamentoClicked(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new EnvioAcabamento();
+            Application.Current.MainPage = new LoteAcabamento();
         }
 
         private void QuadoBotao(object sender, EventArgs e)
