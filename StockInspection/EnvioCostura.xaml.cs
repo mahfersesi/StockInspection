@@ -20,5 +20,10 @@ namespace StockInspection
             // Handle the data here, e.g., save to a database or display a message
             DisplayAlert("Cadastro", "Dados cadastrados com sucesso!", "OK");
         }
+
+        private void QmndoBotao(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new Produto();
+        }
     }
 }

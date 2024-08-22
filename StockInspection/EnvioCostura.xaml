@@ -4,31 +4,96 @@
              x:Class="StockInspection.EnvioCostura"
              BackgroundColor="LightBlue">
 
-    <StackLayout Padding="30" VerticalOptions="Center">
+    <Grid>
+    
+
+    <Grid.RowDefinitions>
+        <RowDefinition Height="150"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="*"/>
+   
+    </Grid.ColumnDefinitions>
+
+       <ImageButton Source="logosemfundo.png"
+            Clicked="QmndoBotao"
+            Grid.Row="0"
+            Grid.Column="3"/>
 
         <Label Text="Envio para a Costura"
                FontSize="Large"
-               HorizontalOptions="Center" />
+               Grid.Row="0"
+               Grid.Column="0" 
+               Grid.ColumnSpan="2"/>
+
+       <Label Text="Nome da Costura"
+               FontSize="20"
+               Grid.Row="1"
+               Grid.Column="0" 
+               Grid.ColumnSpan="3"/>
 
         <Entry Placeholder="Nome da costureira"
-               x:Name="CostureiraEntry" />
+               x:Name="CostureiraEntry"
+               Grid.Row="2"
+               Grid.Column="0"
+               Grid.ColumnSpan="3"/>
+
+       <Label Text="Numero de frente"
+               FontSize="20"
+               Grid.Row="3"
+               Grid.Column="0" 
+               Grid.ColumnSpan="3"/>
 
         <Entry Placeholder="Numero de frente de Camisetas"
                x:Name="FrenteCamisetasEntry"
-               Keyboard="Numeric" />
+               Keyboard="Numeric" 
+               Grid.Row="4"
+               Grid.Column="0" 
+               Grid.ColumnSpan="3"/>
+
+       <Label Text="Numero de costas"
+               FontSize="20"
+               Grid.Row="5"
+               Grid.Column="0" 
+               Grid.ColumnSpan="3"/>
 
         <Entry Placeholder="Numero de costas de Camisetas"
                x:Name="CostasCamisetasEntry"
-               Keyboard="Numeric" />
+               Keyboard="Numeric" 
+               Grid.Row="6"
+               Grid.Column="0"
+               Grid.ColumnSpan="3"/>
+
+       <Label Text="Numero de linhas"
+               FontSize="20"
+               Grid.Row="7"
+               Grid.Column="0" 
+               Grid.ColumnSpan="3"/>
 
         <Entry Placeholder="Numero de linhas que vai ser enviado"
                x:Name="LinhasEnviadasEntry"
-               Keyboard="Numeric" />
+               Keyboard="Numeric" 
+               Grid.Row="8"
+               Grid.Column="0"
+               Grid.ColumnSpan="3"/>
 
         <Button Text="Cadastrar"
                 BackgroundColor="DodgerBlue"
                 TextColor="White"
-                Clicked="OnCadastrarClicked" />
+                Clicked="OnCadastrarClicked" 
+                Grid.Row="9"
+               Grid.Column="1"/>
 
-    </StackLayout>
+   </Grid>
 </ContentPage>
