@@ -11,7 +11,7 @@ namespace StockInspection
             InitializeComponent();
         }
 
-        private async void Button_Anexar_Clicked(object sender, EventArgs e)
+        private async void ButtonAnexarClicked(object sender, EventArgs e)
         {
             // Lógica para abrir o seletor de arquivos e carregar a imagem
             var result = await FilePicker.Default.PickAsync();
@@ -22,7 +22,7 @@ namespace StockInspection
             }
         }
 
-        private async void Button_Cadastrar_Clicked(object sender, EventArgs e)
+        private async void ButtonCadastrarClicked(object sender, EventArgs e)
         {
             // Lógica para cadastrar o envio
             var nomeSilk = txtNomeSilk.Text;

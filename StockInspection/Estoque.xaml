@@ -5,11 +5,33 @@
              Title="Estoque"
              BackgroundColor="LightBlue">
 
+<Grid>
+
+       <Grid.RowDefinitions>
+        <RowDefinition Height="150"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+       <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="*"/>
+   
+    </Grid.ColumnDefinitions>
     
                 <Label Text="Estoque"
                        FontSize="Large"
                        FontAttributes="Bold"
-                       HorizontalOptions="Center" />
+                       Grid.Row="0"
+                       Grid.Column="1"
+                       Grid.ColumnSpan="2"/>
            
 
             <Button Text="+ Adicionar item"
@@ -18,50 +40,73 @@
                     BackgroundColor="DarkBlue"
                     TextColor="White"
                     CornerRadius="10"
-                    HorizontalOptions="Center" />
+                    Grid.Row="1"
+                     Grid.Column="0"
+                     Grid.ColumnSpan="3"/>
 
             <ListView x:Name="estoqueListView"
                       SeparatorVisibility="None"
                       HasUnevenRows="True"
-                      Margin="0,20,0,0">
+                      Margin="0,20,0,0"
+                      Grid.Row="3"
+                      Grid.Column="0"
+                      Grid.ColumnSpan="3"/>
                 
                             <Frame Padding="10"
                                    Margin="5"
                                    BorderColor="Black"
                                    CornerRadius="10"
-                                   BackgroundColor="White">
+                                   BackgroundColor="White"
+                                   Grid.Row="3"
+                                   Grid.Column="0"
+                                   Grid.ColumnSpan="3"
+                                   Grid.RowSpan="6"/>
                                 
                                     <Label Text="Estampa"
-                                           FontAttributes="Bold"
-                                           HorizontalOptions="Center" />
+                                          FontAttributes="Bold"
+                                          Grid.Row="3"
+                                          Grid.Column="1"
+                                          Grid.ColumnSpan="3"/>
                                     
                                         <Image Source="{Binding ImageSource}"
                                                WidthRequest="50"
                                                HeightRequest="50"
-                                               VerticalOptions="Start" />
+                                                Grid.Row="4"
+                                                 Grid.Column="0"
+                                                 Grid.RowSpan="3" />
                                        
                                             <Label Text="{Binding Cliente}"
-                                                   VerticalOptions="Start"
-                                                   HorizontalOptions="StartAndExpand" />
+                                                    Grid.Row="4"
+                                                 Grid.Column="0"
+                                                 Grid.ColumnSpan="2" />
+
                                             <Label Text="{Binding Tecido}"
-                                                   VerticalOptions="Start"
-                                                   HorizontalOptions="StartAndExpand" />
+                                                 Grid.Row="5"
+                                                    Grid.Column="0"
+                                                 Grid.ColumnSpan="2" />
+
                                             <Label Text="{Binding Costura}"
-                                                   VerticalOptions="Start"
-                                                   HorizontalOptions="StartAndExpand" />
+                                                 Grid.Row="6"
+                                                    Grid.Column="0"
+                                                 Grid.ColumnSpan="2"/>
+
                                             <Label Text="{Binding Acabamento}"
-                                                   VerticalOptions="Start"
-                                                   HorizontalOptions="StartAndExpand" />
+                                                 Grid.Row="7"
+                                                    Grid.Column="0"
+                                                 Grid.ColumnSpan="2" />
+
                                             <Label Text="{Binding Silk}"
-                                                   VerticalOptions="Start"
-                                                   HorizontalOptions="StartAndExpand" />
+                                                 Grid.Row="8"
+                                                    Grid.Column="0"
+                                                 Grid.ColumnSpan="2"/>
                                        
                                         <Image Source="checkmark.png"
                                                WidthRequest="30"
                                                HeightRequest="30"
-                                               VerticalOptions="Center"
-                                               HorizontalOptions="End" />
+                                                Grid.Column="0"
+                                                 Grid.ColumnSpan="3"/>
                                     
                 
-            </ListView>
+            
+            </Grid>
 </ContentPage>

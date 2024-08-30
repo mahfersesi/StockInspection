@@ -61,4 +61,6 @@ namespace StockInspection
         public string Acabamento { get; set; }
         public string Silk { get; set; }
     }
+
+    
 }

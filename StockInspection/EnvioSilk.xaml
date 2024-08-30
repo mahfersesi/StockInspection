@@ -3,27 +3,41 @@
              x:Class="StockInspection.EnvioSilk"
              Title="Envio para o Silk">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
+       <Grid.RowDefinitions>
+        <RowDefinition Height="150"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="*"/>
+   
+    </Grid.ColumnDefinitions>
+
 
         <Label Text="Vai para qual Silk?"
-               Grid.Row="0" />
+               Grid.Row="1"
+               Grid.Column="0"/>
 
         <Entry x:Name="txtNomeSilk"
                Placeholder="Digite o nome do silk"
-               Grid.Row="1" />
+               Grid.Row="1"
+               Grid.Column="0"
+               Grid.ColumnSpan="3" />
 
-        <Grid Grid.Row="2">
             <Label Text="Desenho da estampa"
                    VerticalOptions="Center" />
             <Button Text="Anexar"
                     Grid.Column="1"
-                    Clicked="Button_Anexar_Clicked" />
-        </Grid>
+                    Clicked="ButtonAnexarClicked" />
 
         <Entry x:Name="txtQuantidade"
                Placeholder="Digite a quantidade"
@@ -32,6 +46,6 @@
 
         <Button Text="Cadastrar"
                 Grid.Row="4"
-                Clicked="Button_Cadastrar_Clicked" />
+                Clicked="ButtonCadastrarClicked" />
     </Grid>
 </ContentPage>
