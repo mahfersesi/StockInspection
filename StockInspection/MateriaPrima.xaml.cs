@@ -9,9 +9,13 @@ namespace StockInspection
             InitializeComponent();
         }
 
-        private void OnCadastrarClicked(object sender, EventArgs e)
+        private async void OnCadastrarClicked(object sender, EventArgs e)
         {
-            // Lógica para cadastrar as informações
+            string nome = NomeEntry.Text;
+            string tecido = TipoTecidoEntry.Text;
+            string medida = UnidadeMedidaEntry.Text;
+           
+           await DisplayAlert("Cadastrado com sucesso", "Item cadastrado", "OK");
         }
 
         private void QandoBotao(object sender, EventArgs e)

@@ -25,6 +25,13 @@
         <ColumnDefinition Width="*"/>
    
     </Grid.ColumnDefinitions>
+
+    <ImageButton Source="logosemfundo.png"
+            Clicked="estok"
+            Grid.Row="0"
+            Grid.Column="3"
+            />
+
     
                 <Label Text="Estoque"
                        FontSize="Large"

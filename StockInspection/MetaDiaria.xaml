@@ -9,44 +9,78 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
+             <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+             <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <Grid Grid.Row="0">
-            <Image Source="logosemfundo.png" 
-                   HorizontalOptions="End" />
-            <Label Text="Estoque"
-                   VerticalOptions="Center"
-                   HorizontalOptions="CenterAndExpand"
-                   FontSize="Title" />
-        </Grid>
+        <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="200"/>
+              <ColumnDefinition Width="*"/>
+   
+    </Grid.ColumnDefinitions>
 
+        <ImageButton Source="logosemfundo.png"
+            Clicked="meta"
+            Grid.Row="0"
+            Grid.Column="3"
+            />
+
+            
+
+            <Label Text="Estoque"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   FontSize="Title" />
+        
         <Label Text="Corte"
-               Grid.Row="1" />
-        <Entry x:Name="txtCorte"
                Grid.Row="1"
-               Grid.Column="1" />
+              Grid.Column="0"/>
+
+        <Entry x:Name="txtCorte"
+               Grid.Row="2"
+               Keyboard="Numeric"
+               Grid.Column="0"
+               Grid.ColumnSpan="3"/>
 
         <Label Text="Silk"
-               Grid.Row="2" />
+               Grid.Row="3"
+               Grid.Column="0" />
+
         <Entry x:Name="txtSilk"
-               Grid.Row="2"
-               Grid.Column="1" />
+              Keyboard="Numeric"
+               Grid.Row="4"
+               Grid.Column="0"
+               Grid.ColumnSpan="3" />
 
         <Label Text="Costura"
-               Grid.Row="3" />
+               Grid.Row="5" 
+               Grid.Column="0"/>
+
         <Entry x:Name="txtCostura"
-               Grid.Row="3"
-               Grid.Column="1" />
+               Grid.Row="6"
+               Keyboard="Numeric"
+               Grid.Column="0"
+               Grid.ColumnSpan="3" />
 
         <Label Text="Acabamento"
-               Grid.Row="4" />
+               Grid.Row="7"
+               Grid.Column="0" />
+
         <Entry x:Name="txtAcabamento"
-               Grid.Row="4"
-               Grid.Column="1" />
+               Grid.Row="8"
+               Grid.Column="0"
+               Keyboard="Numeric"
+               Grid.ColumnSpan="3" />
 
         <Button Text="Salvar alterações"
                 Clicked="Button_Salvar_Clicked"
-                Grid.Row="5"
-                Grid.ColumnSpan="2" />
+                Grid.Row="10"
+                Grid.Column="1"
+                />
     </Grid>
 </ContentPage>

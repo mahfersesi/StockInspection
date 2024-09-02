@@ -33,7 +33,7 @@ namespace StockInspection
 
         private void OnAddVendaClicked(object sender, EventArgs e)
         {
-            // Logic to add a new sale
+             Application.Current.MainPage = new MetaDiaria();
         }
 
         private void OnDeleteVendaClicked(object sender, EventArgs e)

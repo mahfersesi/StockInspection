@@ -9,6 +9,11 @@ namespace StockInspection
             InitializeComponent();
         }
 
+        private void meta(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new MainPage();
+        }
+
         private async void Button_Salvar_Clicked(object sender, EventArgs e)
         {
             // Lógica para salvar as alterações

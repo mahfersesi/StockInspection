@@ -44,7 +44,7 @@
                    Grid.ColumnSpan="2" />
 
             <Entry Placeholder="Nome do cliente" 
-                    x:Name="NomeClienteEntry"
+                    x:Name="NomeEntry"
                     Grid.Row="2"
                    Grid.Column="0"
                    Grid.ColumnSpan="3" />

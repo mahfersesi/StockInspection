@@ -19,10 +19,15 @@ namespace StockInspection
             
         }
 
-        private void OnSalvarClicked(object sender, EventArgs e)
+        private async void OnSalvarClicked(object sender, EventArgs e)
         { 
-            
+            string nome = NomeClienteEntry.Text;
+            string ddd = DDDEntry.Text;
+            string numero = NumeroCelularEntry.Text;
+            string cep = CEPEntry.Text;
+            string enderoço = EnderecoEntry.Text;
            
+           await DisplayAlert("Sucesso", "Alterações salvas com sucesso!", "OK");
         }
 
         private void OnCancelarClicked(object sender, EventArgs e)

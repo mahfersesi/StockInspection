@@ -48,7 +48,11 @@ namespace StockInspection
 
         private void OnAddItemClicked(object sender, EventArgs e)
         {
-            // Logic to add a new item
+           Application.Current.MainPage = new MateriaPrima();
+        }
+         private void estok(object sender, EventArgs e)
+        {
+           Application.Current.MainPage = new MateriaPrima();
         }
     }
 
