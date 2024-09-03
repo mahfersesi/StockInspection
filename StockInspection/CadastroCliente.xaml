@@ -39,6 +39,10 @@
             Grid.Column="3"
             />
 
+             <Label x:Name="IdLabel"/>
+             <Picker x:Name="pickerEstado"
+                    ItemDisplayBinding="{Binding Nome}"/>
+
             <Label Text="Nome Do(a) Cliente"
                    FontSize="Large"
                    Grid.Column="0"

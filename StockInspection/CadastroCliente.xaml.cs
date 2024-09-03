@@ -4,30 +4,41 @@ using StockInspection.Modelos;
 
 namespace StockInspection
 {
-    public partial class CadastroCliente : ContentPage
-    {
-        List<Modelos.Cliente> lista;
-        public CadastroCliente()
-        {
-            InitializeComponent();
+    public partial class CadastroClientePage : ContentPage
+{
+  
+  public Cliente cliente { get; set; }
+  Controles.ClienteControle clienteControle = new Controles.ClienteControle();
+  Controles.EstadoControle estadoControle = new Controles.EstadoControle();
 
-            lista = new List<Modelos.Cliente>();
-            var A=new Cliente();               
-            A.SetNome("Alice Gabriela Gonsalves");
-            lista.Add(A);
+  
+	public CadastroClientePage()
+	{
+		InitializeComponent();
+    pickerEstado.ItemsSource = estadoControle.LerTodos();
+	}
 
-            
-        }
 
         private async void OnSalvarClicked(object sender, EventArgs e)
         { 
-            string nome = NomeClienteEntry.Text;
-            string ddd = DDDEntry.Text;
-            string numero = NumeroCelularEntry.Text;
-            string cep = CEPEntry.Text;
-            string enderoço = EnderecoEntry.Text;
-           
-           await DisplayAlert("Sucesso", "Alterações salvas com sucesso!", "OK");
+           if (await VerificaSeDadosEstaoCorretos()) // Verifica se os dados são válidos antes de salvar no banco
+    {
+      // O código abaixo preenche o objeto cliente (Modelo) com os dados das Entry's
+      var cliente = new Modelos.Cliente();
+      if (!String.IsNullOrEmpty(IdLabel.Text))
+        cliente.Id      = int.Parse(IdLabel.Text);
+      else
+        cliente.Id      = 0;
+      cliente.Nome      = NomeClienteEntry.Text;
+      cliente.DDD       = DDDEntry.Text;
+      cliente.CEP       = CEPEntry.Text;
+      cliente.Endereço  = EnderecoEntry.SelectedItem as Estado;
+
+      // Com o objeto preenchido enviamos para o controle para criar/atualizar no Banco de Dados
+      clienteControle.CriarOuAtualizar(cliente);
+      // Mostra a mensagem de sucesso
+      await DisplayAlert("Salvar", "Dados salvos com sucesso!", "OK");
+    }
         }
 
         private void OnCancelarClicked(object sender, EventArgs e)
