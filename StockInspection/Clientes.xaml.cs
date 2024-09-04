@@ -15,16 +15,16 @@ namespace StockInspection
 
             lista = new ObservableCollection<Modelos.Cliente>();
             var A=new Cliente();               
-            A.SetNome("Alice Gabriela Gonsalves");
+            A.Nome("Alice Gabriela Gonsalves");
             lista.Add(A);
             var B=new Cliente(); 
-            B.SetNome ("Maria Eduarda Lazore");
+            B.Nome ("Maria Eduarda Lazore");
             lista.Add(B);
             var C=new Cliente(); 
-            C.SetNome ("Maria Eduarda Morais");
+            C.Nome ("Maria Eduarda Morais");
             lista.Add(C);
             var D=new Cliente(); 
-            D.SetNome ("Maria Fernanda Lima Silva");
+            D.Nome ("Maria Fernanda Lima Silva");
             lista.Add(D);
             
 

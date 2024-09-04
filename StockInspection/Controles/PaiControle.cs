@@ -1,3 +1,5 @@
+using LiteDB;
+
 namespace StockInspection.Controles;
 
 public class PaiControle

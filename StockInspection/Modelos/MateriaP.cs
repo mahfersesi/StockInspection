@@ -1,35 +1,9 @@
 namespace StockInspection.Modelos;
 public class MateriaP : Registro
 {
-    string NomeMP;
-    string UnidadeDeMedida;
-    string NomeCliente;
+    public string NomeMP { get; set; }
+    public string UnidadeDeMedida { get; set; }
+    public string NomeCliente { get; set; }
 
 
-public void SetNomeCliente(string NomeCliente)
-{
-    this.NomeCliente= NomeCliente;
-}
-public string GetNomeCliente()
-{
-    return NomeCliente;
-}
-
-public void SetUnidadeDeMedida(string UnidadeDeMedida)
-{
-    this.UnidadeDeMedida= UnidadeDeMedida;
-}
-public string GetUnidadeDeMedida()
-{
-    return UnidadeDeMedida;
-}
-
-public void SetNomeMP(string NomeMP)
-{
-    this.NomeMP= NomeMP;
-}
-public string GetNomeMP()
-{
-    return NomeMP;
-}
 }

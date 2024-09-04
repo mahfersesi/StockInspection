@@ -38,10 +38,11 @@
             Grid.Row="0"
             Grid.Column="3"
             />
-
-             <Label x:Name="IdLabel"/>
-             <Picker x:Name="pickerEstado"
-                    ItemDisplayBinding="{Binding Nome}"/>
+            <Label Text="ID:" />
+            <Label x:Name="IdLabel"/>
+            
+             <Label x:Name="pickerEndereço"
+                    Text="{Binding Nome}"/>
 
             <Label Text="Nome Do(a) Cliente"
                    FontSize="Large"
@@ -59,6 +60,7 @@
 
             <Entry Placeholder="Nome do Cliente" 
                     x:Name="NomeClienteEntry" 
+                    Text=""
                     TextColor="Black"
                     Grid.Column="0"
                     Grid.Row="2"
@@ -88,15 +90,15 @@
 
             
 
-            <Label Text="CEP" 
+            <Label Text="CPF" 
                     FontAttributes="Bold"
                     Grid.Column="0"
                     Grid.Row="5"
                     Grid.ColumnSpan="3"/>
             
                 
-                <Entry Placeholder="CEP" 
-                x:Name="CEPEntry" 
+                <Entry Placeholder="CPF" 
+                x:Name="CPFEntry" 
                 WidthRequest="150" 
                 Keyboard="Numeric"
                  Grid.Column="0"

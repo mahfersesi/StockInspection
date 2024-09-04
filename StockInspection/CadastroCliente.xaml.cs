@@ -4,18 +4,17 @@ using StockInspection.Modelos;
 
 namespace StockInspection
 {
-    public partial class CadastroClientePage : ContentPage
+    public partial class CadastroCliente : ContentPage
 {
   
   public Cliente cliente { get; set; }
   Controles.ClienteControle clienteControle = new Controles.ClienteControle();
   Controles.EstadoControle estadoControle = new Controles.EstadoControle();
-
   
-	public CadastroClientePage()
+	public CadastroCliente()
 	{
 		InitializeComponent();
-    pickerEstado.ItemsSource = estadoControle.LerTodos();
+    pickerEndereço.ItemsSource = estadoControle.LerTodos();
 	}
 
 
@@ -28,11 +27,12 @@ namespace StockInspection
       if (!String.IsNullOrEmpty(IdLabel.Text))
         cliente.Id      = int.Parse(IdLabel.Text);
       else
-        cliente.Id      = 0;
-      cliente.Nome      = NomeClienteEntry.Text;
-      cliente.DDD       = DDDEntry.Text;
-      cliente.CEP       = CEPEntry.Text;
-      cliente.Endereço  = EnderecoEntry.SelectedItem as Estado;
+      Modelos.Cliente.Id      = 0;
+      Modelos.Cliente.Nome      = NomeClienteEntry.Text;
+      Modelos.Cliente.DDD       = DDDEntry.Text;
+      Modelos.Cliente.Número       = NumeroCelularEntry.Text;
+      Modelos.Cliente.CPF       = CPFEntry.Text;
+      Modelos.Cliente.Endereço  = EnderecoEntry.Text;
 
       // Com o objeto preenchido enviamos para o controle para criar/atualizar no Banco de Dados
       clienteControle.CriarOuAtualizar(cliente);

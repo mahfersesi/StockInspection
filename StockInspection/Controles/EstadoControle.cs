@@ -15,7 +15,7 @@ public class EstadoControle : PaiControle
 
   public virtual Modelos.Registro? Ler(int idEstado)
   {
-    var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
+    var collection = liteDB.GetCollection<Modelos.Cliente>(NomeDaTabela);
     return collection.FindOne(d => d.Id == idEstado);
   }
 
@@ -23,8 +23,8 @@ public class EstadoControle : PaiControle
 
   public virtual List<EstadoControle>? LerTodos()
   {
-    var tabela = liteDB.GetCollection<Estado>(NomeDaTabela);
-    return new List<Estado>(tabela.FindAll());
+    var tabela = liteDB.GetCollection<EstadoControle>(NomeDaTabela);
+    return new List<EstadoControle>(tabela.FindAll());
   }
 
   //----------------------------------------------------------------------------
