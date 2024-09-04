@@ -15,7 +15,7 @@ public class ClienteControle : PaiControle
 
   public virtual Modelos.Registro? Ler(int idCliente)
   {
-    var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
+    var collection = liteDB.GetCollection<Modelos.Cliente>(NomeDaTabela);
     return collection.FindOne(d => d.Id == idCliente);
   }
 

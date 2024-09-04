@@ -38,85 +38,53 @@
             Grid.Row="0"
             Grid.Column="3"
             />
+            <Label Text="Cadastrar cliente"
+                   FontSize="20"
+                   Grid.Row="0"
+                   Grid.Column="0"/>
             <Label Text="ID:" />
             <Label x:Name="IdLabel"/>
-            
-             <Label x:Name="pickerEndereço"
-                    Text="{Binding Nome}"/>
+            <Label Text="Nome:" 
+                    Grid.Row="1"
+                    Grid.Column="0"/>
 
-            <Label Text="Nome Do(a) Cliente"
-                   FontSize="Large"
-                   Grid.Column="0"
-                   Grid.Row="1"
-                   Grid.ColumnSpan="3"/>
-
-
-            <Label Text="Cadastro De Clientes"
-                   FontSize="Large"
-                   FontAttributes="Bold"
-                   Grid.Column="0"
-                   Grid.Row="0"
-                   Grid.ColumnSpan="3"/>
-
-            <Entry Placeholder="Nome do Cliente" 
-                    x:Name="NomeClienteEntry" 
-                    Text=""
-                    TextColor="Black"
-                    Grid.Column="0"
+            <Entry Placeholder="Digite o nome" 
+                    x:Name="NomeClienteEntry"
                     Grid.Row="2"
+                    Grid.Column="0"
                     Grid.ColumnSpan="3"/>
 
-            <Label Text="Numero de celular" 
-                    FontAttributes="Bold"
-                    Grid.Column="0"
+            <Label Text="Numero:" 
                     Grid.Row="3"
+                    Grid.Column="0"/>
+            <Entry Placeholder="Digite o Numero"
+                     x:Name="NumeroCelularEntry"
+                     Grid.Row="4"
+                    Grid.Column="0"
                     Grid.ColumnSpan="3"/>
 
-            
-
-                <Entry Placeholder="DDD" 
-                x:Name="DDDEntry" 
-                Grid.Column="0"
-                Grid.Row="4"
-                WidthRequest="50" 
-                Keyboard="Numeric" />
-
-                <Entry Placeholder="Número" 
-                x:Name="NumeroCelularEntry" 
-                Keyboard="Numeric" 
-                Grid.Column="1"
-                Grid.Row="4"
-                Grid.ColumnSpan="2"/>
-
-            
-
-            <Label Text="CPF" 
-                    FontAttributes="Bold"
-                    Grid.Column="0"
+            <Label Text="CPF:"
                     Grid.Row="5"
-                    Grid.ColumnSpan="3"/>
-            
-                
-                <Entry Placeholder="CPF" 
-                x:Name="CPFEntry" 
-                WidthRequest="150" 
-                Keyboard="Numeric"
-                 Grid.Column="0"
-                Grid.Row="6"
-                Grid.ColumnSpan="3"/>
+                    Grid.Column="0"/>
 
-            <Label Text="Endereço" 
-                    FontAttributes="Bold"
+            <Entry Placeholder="Digite o CPF" 
+                    x:Name="CPFEntry"
+                    Grid.Row="6"
                     Grid.Column="0"
+                    Grid.ColumnSpan="3"/>
+
+            <Label Text="Endereço"
                     Grid.Row="7"
-                    Grid.ColumnSpan="3"/>
-            
+                    Grid.Column="0"/>
 
-            <Entry Placeholder="Endereço" 
-                    x:Name="EnderecoEntry" 
-                    Grid.Column="0"
+            <Entry Placeholder="Digite o Endereço" 
+                    x:Name="EnderecoEntry"
                     Grid.Row="8"
+                    Grid.Column="0"
                     Grid.ColumnSpan="3"/>
+
+            <Picker x:Name="pickerEndereço"
+                    ItemDisplayBinding="{Binding Nome}"/>
 
             
 
@@ -128,12 +96,7 @@
                         Grid.Row="10" />
 
 
-                <Button Text="Cancelar" 
-                        Clicked="OnCancelarClicked"
-                        BackgroundColor="Blue"
-                        CornerRadius="25" 
-                        Grid.Column="1"
-                        Grid.Row="14"/>
+                
 
                 <Button Text="Excluir"
                     FontSize="Medium"

@@ -27,12 +27,11 @@ namespace StockInspection
       if (!String.IsNullOrEmpty(IdLabel.Text))
         cliente.Id      = int.Parse(IdLabel.Text);
       else
-      Modelos.Cliente.Id      = 0;
-      Modelos.Cliente.Nome      = NomeClienteEntry.Text;
-      Modelos.Cliente.DDD       = DDDEntry.Text;
-      Modelos.Cliente.Número       = NumeroCelularEntry.Text;
-      Modelos.Cliente.CPF       = CPFEntry.Text;
-      Modelos.Cliente.Endereço  = EnderecoEntry.Text;
+      Cliente.Id      = 0;
+      Cliente.Nome      = NomeClienteEntry.Text;
+      Cliente.Número    = NumeroCelularEntry.Text;
+      Cliente.CPF       = CPFEntry.Text;
+      Cliente.Endereço  = EnderecoEntry.Text;
 
       // Com o objeto preenchido enviamos para o controle para criar/atualizar no Banco de Dados
       clienteControle.CriarOuAtualizar(cliente);
@@ -41,10 +40,7 @@ namespace StockInspection
     }
         }
 
-        private void OnCancelarClicked(object sender, EventArgs e)
-        {
-            Application.Current.MainPage = new Clientes();
-        }
+       
         private void OnDeleteClienteClicked(object sender, EventArgs e)
         {
             var button = sender as Button;
