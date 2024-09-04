@@ -13,7 +13,7 @@ public class EstadoControle : PaiControle
 
   //----------------------------------------------------------------------------
 
-  public virtual Registro? Ler(int idEstado)
+  public virtual Modelos.Registro? Ler(int idEstado)
   {
     var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
     return collection.FindOne(d => d.Id == idEstado);
@@ -21,7 +21,7 @@ public class EstadoControle : PaiControle
 
   //----------------------------------------------------------------------------
 
-  public virtual List<Estado>? LerTodos()
+  public virtual List<EstadoControle>? LerTodos()
   {
     var tabela = liteDB.GetCollection<Estado>(NomeDaTabela);
     return new List<Estado>(tabela.FindAll());
@@ -37,7 +37,7 @@ public class EstadoControle : PaiControle
 
   //----------------------------------------------------------------------------
 
-  public virtual void CriarOuAtualizar(Estado estado)
+  public virtual void CriarOuAtualizar(EstadoControle estado)
   {
     var collection = liteDB.GetCollection<Estado>(NomeDaTabela);
     collection.Upsert(estado);

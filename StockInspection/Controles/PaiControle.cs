@@ -12,7 +12,7 @@ public class PaiControle
     if (liteDB == null)
       liteDB = new LiteDatabase(@"filename=" + pathToPersonalFolder + "; upgrade=true; Mode=Exclusive");
   }
-    public virtual void CriarOuAtualizar(Registro r)
+    public virtual void CriarOuAtualizar(Modelos.Registro r)
   {
 
   }
@@ -20,11 +20,11 @@ public class PaiControle
   {
 
   }
-  public virtual Registro? Ler(int id)
+  public virtual Modelos.Registro? Ler(int id)
   {
     return null;
   }
-    public virtual List<Registro>? LerTodos()
+    public virtual List<Modelos.Registro>? LerTodos()
   {
     return null;
   }

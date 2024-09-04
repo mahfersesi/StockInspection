@@ -13,7 +13,7 @@ public class ClienteControle : PaiControle
 
   //----------------------------------------------------------------------------
 
-  public virtual Registro? Ler(int idCliente)
+  public virtual Modelos.Registro? Ler(int idCliente)
   {
     var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
     return collection.FindOne(d => d.Id == idCliente);
@@ -21,7 +21,7 @@ public class ClienteControle : PaiControle
 
   //----------------------------------------------------------------------------
 
-  public virtual List<Cliente>? LerTodos()
+  public virtual List<Modelos.Cliente>? LerTodos()
   {
     var tabela = liteDB.GetCollection<Cliente>(NomeDaTabela);
     return new List<Cliente>(tabela.FindAll());
@@ -37,7 +37,7 @@ public class ClienteControle : PaiControle
 
   //----------------------------------------------------------------------------
 
-  public virtual void CriarOuAtualizar(Cliente cliente)
+  public virtual void CriarOuAtualizar(Modelos.Cliente cliente)
   {
     var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
     collection.Upsert(cliente);
